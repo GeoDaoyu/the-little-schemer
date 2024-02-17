@@ -1,0 +1,28 @@
+{
+  "name": "the-little-schemer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "npx tsc -w",
+    "build": "npx tsc",
+    "test": "mocha"
+  },
+  "author": "GeoDaoyu",
+  "type": "module",
+  "dependencies": {
+    "lodash-es": "^4.17.21",
+    "ramda": "^0.29.1",
+    "typescript": "^5.3.3"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.3.11",
+    "@types/lodash-es": "^4.17.12",
+    "@types/mocha": "^10.0.6",
+    "@types/ramda": "^0.29.9",
+    "chai": "^4.3.10",
+    "mocha": "^10.2.0",
+    "ts-node": "^10.9.2"
+  }
+}
