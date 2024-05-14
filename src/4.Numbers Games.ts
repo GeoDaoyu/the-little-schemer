@@ -96,7 +96,7 @@ export const occur = <T>(a: T, lat: Array<T>): number => {
   return occur(a, cdr(lat));
 };
 
-export const isOne = curry(e)(1);
+export const isOne: (n: number) => boolean = curry(e)(1);
 
 export const rempick = <T>(n: number, lat: Array<T>): Array<T> => {
   if (isOne(n)) return cdr(lat);
