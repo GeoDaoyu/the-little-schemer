@@ -5,8 +5,8 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "start": "npx tsc -w",
-    "build": "npx tsc",
+    "start": "tsc -w",
+    "build": "tsc",
     "test": "mocha"
   },
   "author": "GeoDaoyu",
