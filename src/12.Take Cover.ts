@@ -1,7 +1,7 @@
 import { car, cdr, cons, isEq, isNull } from "./1.Toys.js";
-import { or, curry } from "ramda";
+import { or } from "ramda";
 
-// haskell 有let rec语法，声明递归函数
+// haskell 需要letrec语法来声明递归函数，JavaScript中可以直接声明递归函数
 export const multirember = <T>(a: T, lat: Array<T>) => {
   const mr = (lat: Array<T>): Array<T> => {
     if (isNull(lat)) return [];
