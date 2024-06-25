@@ -8,6 +8,8 @@ export const multirember = <T>(a: T, lat: Array<T>) => {
   return mr(lat);
 };
 
+// callcc from https://matt.might.net/articles/by-example-continuation-passing-style/
+const callcc = (f, cc) => f((x, k) => cc(x), cc);
 const letcc = (cc, f) => f((x) => cc(x), cc);
 export const remberUptoLast = <T>(a: T, lat: Array<T>): Array<T> => {
   let result = [];
